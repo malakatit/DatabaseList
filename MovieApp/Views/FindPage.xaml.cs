@@ -23,6 +23,6 @@ public partial class FindPage : ContentPage
         moveTemplate.SetBinding(TextCell.DetailProperty, "Rating");
 
         lstMovies.ItemTemplate = moveTemplate;
-        lstMovies.ItemsSource = App.MovieList;
+        lstMovies.ItemsSource = App.MovieList.GetMovies();
     }
 }
